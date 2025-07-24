@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/portif%C3%B3lio/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cdastro para portifólio - Cadastro</title>
+
+    <!-- Estilos externos -->
+    
+
+    <!-- Fonte Roboto (semelhante à do Disney+) -->
+    
+<link rel="stylesheet" href="./Sistema de Cdastro para portifólio - Cadastro_files/styles.css"><link href="./Sistema de Cdastro para portifólio - Cadastro_files/css2" rel="stylesheet"></head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com logo -->
+        <header>
+            <img src="./Sistema de Cdastro para portifólio - Cadastro_files/Disney+_logo.svg" alt="Disney+" class="logo">
+        </header>
+
+        <!-- Formulário de Cadastro -->
+        <main class="signup-form">
+            <h1>Cadastre-se</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Crie uma senha" required="">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirme a Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Repita a senha" required="">
+                </div>
+                <button type="submit" class="submit-btn">Realize sua assinatura já!</button>
+            </form>
+
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="http://127.0.0.1:5500/portif%C3%B3lio/index.html#">Entrar</a></p>
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>© Sistema de Cadastro para Portifólio com inspiração na aba de cadastro do Disney+. Projeto para portfólio.</p>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
