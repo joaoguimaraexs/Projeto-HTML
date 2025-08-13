@@ -1,4 +1,4 @@
-# 🎬 Projeto HTML - Clone Disney+ (Página de Cadastro)
+# 🎬 Projeto HTML - Sistema de cadastro com base no site da Disney+ (Página de Cadastro)
 
 Este projeto é um clone inspirado na página de cadastro do Disney+, desenvolvido para fins de estudo e portfólio.
 
