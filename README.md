@@ -7,7 +7,6 @@ Este projeto é um clone inspirado na página de cadastro do Disney+, desenvolvi
 - **Botão de ação** para simular assinatura.
 - **Design moderno**, com imagem de fundo e logo centralizada.
 - **Formulário responsivo** para dispositivos móveis.
-- Opção de **mostrar/ocultar senha** com JavaScript.
 
 ## 🛠️ Tecnologias Utilizadas
 - **HTML5** para estrutura da página.
