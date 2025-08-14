@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro para portifólio - Cadastro</title>
+
+    <!-- Fonte Roboto -->
+    <link href="./Sistema de Cadastro para portifólio - Cadastro_files/css2" rel="stylesheet">
+
+    <style>
+        /* ================================
+           RESET BÁSICO
+        ================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte base */
+        body {
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+        }
+
+        /* Animação do fundo */
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* ================================
+           CONTAINER PRINCIPAL
+        ================================ */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        /* ================================
+           CABEÇALHO
+        ================================ */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* ================================
+           FORMULÁRIO
+        ================================ */
+        .signup-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            animation: slideUp 1s ease forwards;
+        }
+
+        .signup-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        /* Campos do formulário */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            font-size: 1rem;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        input:focus {
+            border-color: #1f80e0;
+            box-shadow: 0 0 10px #1f80e0;
+            outline: none;
+        }
+
+        /* ================================
+           BOTÃO DE ENVIO
+        ================================ */
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #1f80e0, #2b9df4);
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(31, 128, 224, 0.5);
+        }
+
+        /* ================================
+           LINK DE LOGIN
+        ================================ */
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            color: #1f80e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .login-link a:hover {
+            color: #2b9df4;
+            text-decoration: underline;
+        }
+
+        /* ================================
+           RODAPÉ
+        ================================ */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* ================================
+           ANIMAÇÕES
+        ================================ */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* ================================
+           RESPONSIVIDADE
+        ================================ */
+        @media (max-width: 480px) {
+            .signup-form {
+                padding: 15px;
+            }
+            .signup-form h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com logo -->
+        <header>
+            <img src="./Sistema de Cadastro para portifólio - Cadastro_files/Disney+_logo.svg" alt="Disney+" class="logo">
+        </header>
+
+        <!-- Formulário de Cadastro -->
+        <main class="signup-form">
+            <h1>Cadastre-se</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Crie uma senha" required="">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirme a Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Repita a senha" required="">
+                </div>
+                <button type="submit" class="submit-btn">Realize sua assinatura já!</button>
+            </form>
+
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="http://127.0.0.1:5500/index.html#">Entrar</a></p>
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>© Sistema de Cadastro para Portifólio com inspiração na aba de cadastro do Disney+. Projeto para portfólio.</p>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
